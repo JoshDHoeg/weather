@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
+//basic class component
 export default class Weather extends Component {
   constructor(props){
     super(props);
   }
 
   render() {
-    if(this.key){
-      console.log(this.key)
-    }
+    //line 13 -- pretty simple just loading data directly from props
+    //line 18 -- this button calls a function that was passed down from the parent component will refresh the data when clicked
     return (
       <section id="current-weather" >
         <p>{this.props.weather.summary}</p>
