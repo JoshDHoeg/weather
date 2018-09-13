@@ -7,7 +7,7 @@ const darkSkyInstance = axios.create({
   baseURL: 'https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/9ad30d6f0346897bb150df5336fe0d0d/'
 });
 
-class App extends Component {
+export default class App extends Component {
   constructor () {
     super ();
     this.state = { current: {}, daily: [] };
@@ -60,5 +60,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
